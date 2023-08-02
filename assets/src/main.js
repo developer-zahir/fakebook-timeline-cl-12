@@ -132,12 +132,11 @@ const show_post = () => {
             <p>${item.post_content}</p>
           </div>
         </div>
-        <div class="post-media">
-          <img
-            src="${item.post_image}"
-            alt=""
-          />
+<div class="post-media">
+      ${item.post_image ? `<img src="${item.post_image}" />` : ""}
         </div>
+
+      
         <div class="post-comments">
           <div class="comments-header">
             <div class="reaction">
